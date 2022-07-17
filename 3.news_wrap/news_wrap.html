@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resoft</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="./css/style_sec_proj.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- 3.slider-part -->
+   <section id="sec_proj">
+    <div class="sec_proj_wrap">
+      <div class="sec_proj_title">
+        <h2>프로젝트</h2>
+        <p>RESOFT PROJECTS</p>
+      </div>
+      <div class="sec_proj_container">
+        <!-- Box -->
+        <div class="sec_proj_box">
+          <div class="sec_proj_box_title">
+            <p>송파구청 송파둘레길<br>비대면 걷기대회</p>
+          </div>
+          <div class="sec_proj_wrap_img">
+            <img src="./img/logo_songpa.png" alt="송파구청 로고">
+          </div>
+        </div>
+        <div class="sec_proj_box">
+          <div class="sec_proj_box_title">
+            <p>대구인문사회대학</p>
+          </div>
+          <div class="sec_proj_wrap_img">
+            <img src="./img/logo_inmun.png" alt="대구인문사회대학 로고">
+          </div>
+        </div>
+        <div class="sec_proj_box">
+          <div class="sec_proj_box_title">
+            <p>제15회 달서<br>하프 비대면 마라톤대회</p>
+          </div>
+          <div class="sec_proj_wrap_img">
+            <img src="./img/logo_dalseo.png" alt="달서구청 로고">
+          </div>
+        </div>
+        <div class="sec_proj_box">
+          <div class="sec_proj_box_title">
+            <p>제8회 한성백제<br>비대면 마라톤대회</p>
+          </div>
+          <div class="sec_proj_wrap_img">
+            <img src="./img/logo_hansung.png" alt="한성백제마라톤 로고">
+          </div>
+        </div>
+        <div class="sec_proj_box">
+          <div class="sec_proj_box_title">
+            <p>2020 대구 마스크 쓰GO<br>코로나 극복 레이스</p>
+          </div>
+          <div class="sec_proj_wrap_img">
+            <img src="./img/logo_daegu.png" alt="대구광역시 로고">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.sec_proj_container').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow:'<ion-icon class="btn_arrow prev" name="chevron-back-outline"></ion-icon>',
+        nextArrow:'<ion-icon class="btn_arrow next" name="chevron-forward-outline"></ion-icon>',
+        // 반응형 적용
+        responsive: [
+          {  //화면 사이즈 960px
+            breakpoint: 960,
+            settings: {
+              slidesToShow: 3
+            }
+          },
+          { //화면 사이즈 768px
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2
+            }
+          },
+          { //화면 사이즈 640px
+            breakpoint: 430,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
+</body>
+</html>
